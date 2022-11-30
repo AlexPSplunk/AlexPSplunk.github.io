@@ -1,5 +1,5 @@
 {{- if and .Values.networkExplorer.enabled .Values.networkExplorer.podSecurityPolicy.enabled }}
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodSecurityPolicy
 metadata:
   name: {{ include "splunk-otel-collector-kernel-collector.fullname" . }}
